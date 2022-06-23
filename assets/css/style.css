@@ -65,17 +65,18 @@ header a{
 .menu{
     position: fixed;
     width: 100%;
-    background: rgb(30, 67, 86, 1);
     left: -100%;
     text-align: center;
     transition: all .5s;
     top: 100px;
     height: 100%;
+    background-color: #1e4356;
 }
 
 /*Navbar*/
 nav ul li{
-    display: block; 
+    display: block;
+    line-height: 50px; 
 }
 
 nav ul li a{
@@ -198,8 +199,7 @@ main{
 }
 
 .card__profesionales--foto{
-    background-color: #1e4356;
-    width: 100%;
+    background: linear-gradient(125deg, rgba(30,67,86,1) 0%, rgba(22,90,125,1) 97%);    width: 100%;
     height: 140px;
     text-align: center;
     margin-bottom: 80px;    
@@ -228,6 +228,10 @@ main{
 
 /*sección tratamientos página servicios*/
 
+.header__servicios{
+    z-index: 2;
+}
+
 .tratamientos{
     display: flex;
     flex-direction: column;
@@ -249,10 +253,11 @@ main{
 }
 
 .card__servicios h3{
-    background-color: #1e4356;
+    background: linear-gradient(125deg, rgba(30,67,86,1) 0%, rgba(22,90,125,1) 97%);
     color: #fff;
     font-family: "myriad";
     font-size: 20px;
+    z-index: 1;
 }
 
 .card__servicios p{
@@ -305,8 +310,7 @@ main{
 .titulo__calendario{
     width: 100%;
     text-align: center;
-    background-color: #1e4356;
-    color: #fff;
+    background: linear-gradient(125deg, rgba(30,67,86,1) 0%, rgba(22,90,125,1) 97%);    color: #fff;
     padding: 5px;
 }
 
@@ -374,10 +378,10 @@ main{
 }
 
 .bloque__informacion h3{
-    background-color: #1e4356;
-    color: #fff;
+    background: linear-gradient(125deg, rgba(30,67,86,1) 0%, rgba(24,114,161,1) 97%);
     text-align: center;
     font-size: 23px;
+    color: #fff;
 }
 
 .elementos__informacion{
@@ -434,10 +438,10 @@ main{
 }
 
 .bloque__consultas h3{
-    background-color: #1e4356;
-    color: #fff;
+    background: linear-gradient(125deg, rgba(30,67,86,1) 0%, rgba(24,114,161,1) 97%);
     text-align: center;
     font-size: 23.5px;
+    color: #fff;
 }
 
 .form__textarea{
@@ -570,7 +574,7 @@ margin-bottom: 5px;
     }
 
     .main__bienvenida h2{
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .main__bienvenida h3{
@@ -590,6 +594,7 @@ margin-bottom: 5px;
         justify-content: center;
         margin-bottom: 25px;
     }
+
     
     .galeria__foto{
         width: 43vw;
@@ -608,14 +613,30 @@ margin-bottom: 5px;
         height: max-content;       
     }
 
+    .header__servicios{
+        z-index: 2;
+    }
+
     .card__servicios{
         display: flex;
         flex-direction: column;
         width: 40vw;
     }
 
+    .card__servicios--foto:hover .servicios__foto--size{
+        transform:scale(1.1,1.1);
+        transition: 1s;
+
+    }
+
+    .card__servicios--foto{
+        overflow: hidden;
+    }
+
     .card__servicios h3{
         font-size: 20px;
+        position: relative;
+        z-index: 1;
     }
 
     .card__servicios p{
@@ -805,6 +826,12 @@ margin-bottom: 5px;
         color: #1e4356;
         font-size: 23px;
 }
+
+    .card__profesionales:hover{
+        transform: scale(1.1,1.1);
+        transition: 1s;
+
+    }
 
     .card__servicios p{
         font-size: 14px;
