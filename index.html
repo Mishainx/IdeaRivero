@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./assets/img/mikine-favicon-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/icofont/icofont.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -72,14 +73,14 @@
   <main class="main__index">
 
       <!-- Home banner -->
-    <div class="main__bienvenida">           
-      <h2>Bienvenidos a Mikine</h2>
-      <h3>Consultorio de Kinesiología. Tu cuerpo sabe, nosotros lo acompañamos.</h3>
-      <div>
-        <a href="./pages/turnos.html" class="reserva__boton">Turnos</a>
+      <div class="main__bienvenida">           
+        <h2 data-aos="fade-down" data-aos-duration="1400">Bienvenidos a Mikine</h2>
+        <h3 data-aos="fade-up" data-aos-duration="1300" data-aos-delay="700">Consultorio de Kinesiología. Tu cuerpo sabe, nosotros lo acompañamos.</h3>
+        <div data-aos="fade-up" data-aos-duration="1300" data-aos-delay="1100">
+          <a href="./pages/turnos.html" class="reserva__boton">Turnos</a>
+        </div>
       </div>
-    </div>
-    <!-- Fin home banner -->
+      <!-- Fin home banner -->
 
   </main>
     <!-- ======= Fin Main ======= -->
@@ -133,6 +134,10 @@
      
   </footer>  
       <!-- ======= Fin footer ======= -->
-        
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>  
 </body>
 </html>
